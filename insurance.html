@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&amp;family=Newsreader:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#003ea8",
+                    "inverse-primary": "#bec6e0",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "surface-container-low": "#f2f4f6",
+                    "outline": "#76777d",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed": "#00174b",
+                    "surface-container": "#eceef0",
+                    "on-primary-fixed": "#131b2e",
+                    "primary-fixed-dim": "#bec6e0",
+                    "tertiary-fixed-dim": "#b4c5ff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-high": "#e6e8ea",
+                    "on-background": "#0F172A",
+                    "primary-fixed": "#dae2fd",
+                    "secondary-container": "#d5e3fd",
+                    "background": "#f7f9fb",
+                    "tertiary-container": "#2563EB",
+                    "outline-variant": "#cbd5e1",
+                    "error": "#ba1a1a",
+                    "inverse-surface": "#2d3133",
+                    "secondary-fixed-dim": "#b9c7e0",
+                    "surface-variant": "#e0e3e5",
+                    "on-error": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "primary": "#0F172A",
+                    "surface-tint": "#0F172A",
+                    "surface-dim": "#d8dadc",
+                    "inverse-on-surface": "#eff1f3",
+                    "secondary-fixed": "#d5e3fd",
+                    "on-surface": "#0F172A",
+                    "tertiary": "#2563EB",
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed": "#dbe1ff",
+                    "on-secondary-container": "#475569",
+                    "on-tertiary-container": "#ffffff",
+                    "secondary": "#475569",
+                    "on-primary-container": "#7c839b",
+                    "surface": "#f7f9fb",
+                    "on-secondary-fixed-variant": "#3a485c",
+                    "on-surface-variant": "#64748b",
+                    "primary-container": "#0F172A",
+                    "surface-container-highest": "#e0e3e5",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed": "#0d1c2f",
+                    "surface-bright": "#f7f9fb"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "base": "4px",
+                    "margin": "32px",
+                    "lg": "24px",
+                    "md": "16px",
+                    "sm": "8px",
+                    "gutter": "24px",
+                    "xl": "48px",
+                    "xs": "4px"
+            },
+            "fontFamily": {
+                    "label-lg": ["Public Sans"],
+                    "label-md": ["Public Sans"],
+                    "body-md": ["Newsreader"],
+                    "body-lg": ["Newsreader"],
+                    "h3": ["Public Sans"],
+                    "h1": ["Public Sans"],
+                    "h2": ["Public Sans"],
+                    "button": ["Public Sans"]
+            },
+            "fontSize": {
+                    "label-lg": ["14px", {"lineHeight": "1", "fontWeight": "600"}],
+                    "label-md": ["12px", {"lineHeight": "1", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "body-lg": ["20px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "h3": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "h1": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "h2": ["32px", {"lineHeight": "1.25", "fontWeight": "600"}],
+                    "button": ["14px", {"lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .institutional-border {
+        border-left: 4px solid #0F172A;
+      }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased">
+<!-- TopNavBar -->
+<header class="bg-surface-container-lowest sticky top-0 z-50 border-b border-outline-variant">
+<nav class="flex justify-between items-center w-full px-margin py-md max-w-7xl mx-auto">
+<div class="font-h2 text-h3 font-bold text-on-surface tracking-tighter uppercase">SECURE<span class="text-tertiary">GUARD</span><span class="text-on-surface-variant font-label-md text-[10px] ml-1 tracking-[0.2em] opacity-60">SYSTEMS</span></div>
+<div class="hidden md:flex items-center gap-lg">
+          <a class="text-primary border-b-2 border-tertiary font-button text-button pb-1 transition-all" href="insurance.html">INSURANCE</a>
+          <a class="text-on-surface-variant font-button text-button hover:text-on-surface transition-colors" href="logistics.html">LOGISTICS</a>
+</div>
+<div class="flex items-center gap-md">
+<button class="hidden lg:block text-on-surface-variant font-button text-button px-4 py-2 hover:text-on-surface transition-colors">LOG IN</button>
+<button class="bg-primary text-on-primary font-button text-button px-md py-3 rounded-lg shadow-sm hover:bg-opacity-90 transition-all">GET QUOTE</button>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative bg-surface py-xl overflow-hidden border-b border-outline-variant">
+<div class="max-w-7xl mx-auto px-margin grid grid-cols-1 lg:grid-cols-12 gap-xl items-center py-xl relative z-10">
+<div class="lg:col-span-7">
+<div class="inline-block bg-primary text-on-primary text-[10px] font-bold px-3 py-1 mb-md uppercase tracking-[0.2em] rounded-sm">Division: Risk Mitigation v4.0</div>
+<h1 class="font-h1 text-h1 text-on-surface mb-md">
+                        INSTITUTIONAL GRADE SECURITY
+                        <span class="text-on-surface-variant block mt-xs">LOGISTICS-FIRST PROTECTION.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg max-w-2xl border-l-2 border-tertiary pl-md">
+                        Meticulous risk assessment born from global logistics infrastructure. Precision insurance coverage for high-stakes enterprise and personal portfolios.
+                    </p>
+<!-- Quote Calculator Card -->
+<div class="bg-surface-container-lowest border border-outline-variant p-md rounded-lg shadow-xl max-w-lg institutional-border">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-md mb-md">
+<div>
+<label class="font-label-lg text-label-md block mb-xs text-on-surface-variant uppercase">Coverage Module</label>
+<select class="w-full bg-surface-container-low border border-outline-variant text-on-surface rounded-lg p-sm font-label-md focus:border-tertiary outline-none transition-colors appearance-none">
+<option>Auto Asset</option>
+<option>Estate Protection</option>
+<option>Legacy Wealth</option>
+</select>
+</div>
+<div>
+<label class="font-label-lg text-label-md block mb-xs text-on-surface-variant uppercase">Regional Code</label>
+<input class="w-full bg-surface-container-low border border-outline-variant text-on-surface rounded-lg p-sm font-label-md focus:border-tertiary outline-none transition-colors" placeholder="ZIP: 10001" type="text"/>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary font-button text-button py-4 rounded-lg hover:bg-opacity-90 transition-all uppercase tracking-[0.1em]">EXECUTE QUOTE PROTOCOL</button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<img alt="Modern Architectural Glass and Security" class="w-full aspect-[4/5] lg:aspect-square object-cover relative z-10 border border-outline-variant rounded-lg shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxOPvkM3qg2lUxYk3NzyTPEmkSEo2S4NPa5dBbURyQ4zbgWElM0F6X6oxlcmRyycF10EBrUD73FShQzp_2ldLerDDhjv0Cm7JsiRb3Adjv4A-DlZW9SEMQtU2iF1YH6BbpJVAoeePWtrqwqczq3aDHi2r6fvXvVX6vsCs4rs_zzqt_h77ale2ecrLH_ZHnGzJ0PrhbK1j9HwFM2QoqfznjAwmytodZpe45n_fJW8YIBOUpVyEDc6DeMomcWClXmiJQsI4pFjAQk4A"/>
+<div class="absolute bottom-4 right-4 bg-primary text-on-primary px-3 py-1 z-20 font-label-md text-[10px] rounded-sm">LAT: 40.7128 N / LON: 74.0060 W</div>
+</div>
+</div>
+</section>
+<!-- Service Blocks -->
+<section class="py-xl bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="mb-lg flex justify-between items-end border-b border-outline-variant pb-md">
+<div>
+<span class="text-tertiary font-label-lg text-label-md tracking-[0.2em] uppercase mb-xs block">Service Matrix</span>
+<h2 class="font-h2 text-h2 text-on-surface">Integrated Protection</h2>
+</div>
+<div class="text-on-surface-variant font-label-md text-[12px] hidden md:block uppercase tracking-widest">INSURANCE SUB-DIV // 03 MODULES</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Auto -->
+<div class="group bg-surface-container-low p-md border border-outline-variant rounded-lg hover:border-tertiary transition-all duration-300">
+<div class="mb-sm flex justify-between items-start">
+<span class="material-symbols-outlined text-tertiary text-4xl">local_shipping</span>
+<span class="text-on-surface-variant font-label-md text-[10px]">INS_LOG_01</span>
+</div>
+<h3 class="font-h3 text-h3 text-on-surface mb-sm">Fleet &amp; Auto</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg">Precision-engineered coverage for personal and commercial transit. Zero-deductible glass repair and 24/7 technical concierge support.</p>
+<a class="text-tertiary font-button text-button flex items-center gap-xs hover:gap-sm transition-all uppercase" href="#">
+                            ANALYZE COVERAGE <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Home -->
+<div class="group bg-surface-container-low p-md border border-outline-variant rounded-lg hover:border-tertiary transition-all duration-300">
+<div class="mb-sm flex justify-between items-start">
+<span class="material-symbols-outlined text-tertiary text-4xl">warehouse</span>
+<span class="text-on-surface-variant font-label-md text-[10px]">INS_LOG_02</span>
+</div>
+<h3 class="font-h3 text-h3 text-on-surface mb-sm">Estate &amp; Asset</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg">Comprehensive protection for high-value properties and warehousing. Environmental liability and full replacement protocols.</p>
+<a class="text-tertiary font-button text-button flex items-center gap-xs hover:gap-sm transition-all uppercase" href="#">
+                            ANALYZE COVERAGE <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Life -->
+<div class="group bg-surface-container-low p-md border border-outline-variant rounded-lg hover:border-tertiary transition-all duration-300">
+<div class="mb-sm flex justify-between items-start">
+<span class="material-symbols-outlined text-tertiary text-4xl">inventory_2</span>
+<span class="text-on-surface-variant font-label-md text-[10px]">INS_LOG_03</span>
+</div>
+<h3 class="font-h3 text-h3 text-on-surface mb-sm">Legacy Capital</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg">Multi-generational wealth preservation strategies aligned with commercial growth. Advanced liquidity and secure transfer.</p>
+<a class="text-tertiary font-button text-button flex items-center gap-xs hover:gap-sm transition-all uppercase" href="#">
+                            ANALYZE COVERAGE <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Claims Center Callout -->
+<section class="py-xl">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="bg-surface-container-high p-md md:p-lg flex flex-col md:flex-row items-center justify-between gap-lg relative border-l-8 border-tertiary shadow-lg rounded-r-lg">
+<div class="relative z-10 max-w-xl">
+<h2 class="font-h2 text-h2 text-on-surface mb-sm uppercase">EXPEDITED CLAIMS PROCESSING</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Logistics-grade response system. Average property claim initiation: &lt; 600 seconds. Maintaining stability through system failure.</p>
+</div>
+<div class="relative z-10 flex flex-col sm:flex-row gap-md w-full md:w-auto">
+<button class="bg-primary text-on-primary font-button text-button px-lg py-4 rounded-lg hover:bg-opacity-90 transition-all uppercase">INITIALIZE CLAIM</button>
+<button class="border-2 border-primary text-primary font-button text-button px-lg py-4 rounded-lg hover:bg-primary hover:text-on-primary transition-all uppercase">TRACK STATUS</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Section -->
+<section class="py-xl bg-surface border-y border-outline-variant">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="text-center mb-lg">
+<h2 class="font-h3 text-h3 text-on-surface mb-xs uppercase">VERIFIED RELIABILITY</h2>
+<div class="h-1 w-16 bg-tertiary mx-auto mb-md"></div>
+<p class="font-body-md text-body-md text-on-surface-variant">Industrial-strength financial ratings integrated with SecureGuard Logistics.</p>
+</div>
+<!-- Partner Logos -->
+<div class="flex flex-wrap justify-center items-center gap-xl mb-xl opacity-60 grayscale hover:grayscale-0 transition-all duration-500 font-h3 font-bold text-on-surface">
+<div class="tracking-widest">ISO-CERTIFIED</div>
+<div class="tracking-widest">A++ RATED</div>
+<div class="tracking-widest">FORTUNE 500</div>
+<div class="tracking-widest">LOGISTICS-CORE</div>
+<div class="tracking-widest">TRUSTMARK</div>
+</div>
+<!-- Testimonials -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="bg-surface-container-lowest p-md border border-outline-variant rounded-lg institutional-border">
+<p class="font-body-lg text-body-lg text-on-surface italic mb-lg">"SecureGuard handled our fleet claim with the same precision they apply to our shipping routes. A truly integrated partner."</p>
+<div class="flex items-center gap-md">
+<div class="w-12 h-12 bg-primary flex items-center justify-center font-bold text-on-primary font-h3 rounded-lg">RH</div>
+<div>
+<p class="font-label-lg text-label-md text-on-surface uppercase">Robert Harrison</p>
+<p class="text-on-surface-variant font-label-md text-[12px] uppercase">CEO, HARRISON LOGISTICS</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-md border border-outline-variant rounded-lg institutional-border">
+<p class="font-body-lg text-body-lg text-on-surface italic mb-lg">"The transition between their logistics data and insurance coverage is seamless. The response speed is unparalleled."</p>
+<div class="flex items-center gap-md">
+<div class="w-12 h-12 bg-surface-container-high flex items-center justify-center font-bold text-tertiary font-h3 rounded-lg">EC</div>
+<div>
+<p class="font-label-lg text-label-md text-on-surface uppercase">Elena Chen</p>
+<p class="text-on-surface-variant font-label-md text-[12px] uppercase">POLICYHOLDER [SINCE 2012]</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter px-margin py-xl max-w-7xl mx-auto">
+<div class="flex flex-col gap-md">
+<div class="font-h3 text-h3 font-bold text-on-surface tracking-tighter uppercase">SECURE<span class="text-tertiary">GUARD</span></div>
+<p class="font-body-md text-body-md text-on-surface-variant pr-md">An integrated division of SecureGuard Logistics. Risk management and insurance systems since 1984.</p>
+</div>
+<div class="flex flex-col gap-sm">
+<h4 class="font-label-lg text-label-md text-tertiary uppercase tracking-[0.1em] mb-xs">Insurance Solutions</h4>
+<nav class="flex flex-col gap-sm">
+<a class="text-on-surface-variant font-button text-label-md hover:text-tertiary transition-colors uppercase" href="#">Personal Portfolio</a>
+<a class="text-on-surface-variant font-button text-label-md hover:text-tertiary transition-colors uppercase" href="#">Commercial Asset Protection</a>
+<a class="text-on-surface-variant font-button text-label-md hover:text-tertiary transition-colors uppercase" href="#">Specialty Liabilities</a>
+<a class="text-on-surface-variant font-button text-label-md hover:text-tertiary transition-colors uppercase" href="#">Logistics &amp; Cargo Insurance</a>
+</nav>
+</div>
+<div class="flex flex-col gap-sm">
+<h4 class="font-label-lg text-label-md text-tertiary uppercase tracking-[0.1em] mb-xs">Group Resources</h4>
+<nav class="flex flex-col gap-sm">
+            <a class="text-on-surface-variant font-button text-label-md hover:text-tertiary transition-colors uppercase" href="logistics.html">Logistics Division</a>
+<a class="text-on-surface-variant font-button text-label-md hover:text-tertiary transition-colors uppercase" href="#">Privacy Protocol</a>
+<a class="text-on-surface-variant font-button text-label-md hover:text-tertiary transition-colors uppercase" href="#">Security Disclosure</a>
+<a class="text-on-surface-variant font-button text-label-md hover:text-tertiary transition-colors uppercase" href="#">Global Hub Network</a>
+</nav>
+</div>
+<div class="flex flex-col gap-sm">
+<h4 class="font-label-lg text-label-md text-tertiary uppercase tracking-[0.1em] mb-xs">Contact</h4>
+<p class="text-on-surface-variant font-label-md text-[12px] uppercase">HQ: 200 FINANCIAL DISTRICT, NY</p>
+<p class="text-on-surface-variant font-label-md text-[12px] uppercase">LOGISTICS HUB: NEWARK, NJ</p>
+<div class="flex gap-md mt-sm">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-tertiary">language</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-tertiary">shield</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-tertiary">local_shipping</span>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-margin py-md border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-md">
+<p class="font-label-md text-[10px] text-on-surface-variant uppercase">© 2024 SECUREGUARD SYSTEMS. INSURANCE DIVISION LICENSED NATIONWIDE [USA].</p>
+<div class="flex gap-lg">
+<span class="font-label-md text-[10px] text-on-surface-variant uppercase tracking-widest">AM BEST A++</span>
+<span class="font-label-md text-[10px] text-on-surface-variant uppercase tracking-widest">LOGISTICS COMPLIANT</span>
+</div>
+</div>
+</footer>
+    <script>
+        // Simple Quote Execution Protocol
+        document.querySelector('button[class*="bg-primary"][class*="py-4"]')?.addEventListener('click', (e) => {
+            const button = e.target;
+            const originalText = button.innerText;
+            button.innerText = 'EXECUTING PROTOCOL...';
+            button.classList.add('opacity-50');
+            
+            setTimeout(() => {
+                alert('Insurance Quote Protocol Executed. System analyzed regional risk code. Your preliminary premium estimate has been dispatched to the Client Portal.');
+                button.innerText = originalText;
+                button.classList.remove('opacity-50');
+            }, 2000);
+        });
+
+        // Claim Initialization
+        document.querySelector('button:contains("INITIALIZE CLAIM")')?.addEventListener('click', () => {
+            alert('Initializing Expedited Claim Protocol. Please standby for biometric verification.');
+        });
+        
+        // jQuery-like contains selector doesn't exist in vanilla JS, let's fix that
+        document.querySelectorAll('button').forEach(btn => {
+            if (btn.innerText.includes('INITIALIZE CLAIM')) {
+                btn.addEventListener('click', () => {
+                    alert('Initializing Expedited Claim Protocol. Please standby for biometric verification.');
+                });
+            }
+            if (btn.innerText.includes('TRACK STATUS')) {
+                btn.addEventListener('click', () => {
+                    alert('System Status: All nodes active. No pending claims for current session.');
+                });
+            }
+        });
+    </script>
+</body></html>
