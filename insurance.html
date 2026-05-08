@@ -268,6 +268,48 @@
 </div>
 </div>
 </section>
+<!-- Contact Section -->
+<section class="py-xl bg-surface-container-low border-t border-outline-variant">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="text-center mb-lg">
+<span class="text-tertiary font-label-lg text-label-md tracking-[0.2em] uppercase mb-xs block">Get In Touch</span>
+<h2 class="font-h2 text-h2 text-on-surface">Contact Us</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-sm">Southern Insurance Company &mdash; Sidney, Nebraska 69162</p>
+</div>
+<div class="max-w-2xl mx-auto bg-surface-container-lowest border border-outline-variant rounded-lg shadow-sm p-lg institutional-border">
+<form id="contact-form" class="grid grid-cols-1 sm:grid-cols-2 gap-md">
+<div class="space-y-xs">
+<label class="font-label-lg text-label-md text-on-surface-variant uppercase block">Full Name</label>
+<input type="text" placeholder="Your name" class="w-full bg-surface-container-low border border-outline-variant text-on-surface rounded-lg p-sm font-label-md focus:border-tertiary outline-none transition-colors" required/>
+</div>
+<div class="space-y-xs">
+<label class="font-label-lg text-label-md text-on-surface-variant uppercase block">Email</label>
+<input type="email" placeholder="your@email.com" class="w-full bg-surface-container-low border border-outline-variant text-on-surface rounded-lg p-sm font-label-md focus:border-tertiary outline-none transition-colors" required/>
+</div>
+<div class="space-y-xs">
+<label class="font-label-lg text-label-md text-on-surface-variant uppercase block">Phone</label>
+<input type="tel" placeholder="(000) 000-0000" class="w-full bg-surface-container-low border border-outline-variant text-on-surface rounded-lg p-sm font-label-md focus:border-tertiary outline-none transition-colors"/>
+</div>
+<div class="space-y-xs">
+<label class="font-label-lg text-label-md text-on-surface-variant uppercase block">Subject</label>
+<select class="w-full bg-surface-container-low border border-outline-variant text-on-surface rounded-lg p-sm font-label-md focus:border-tertiary outline-none transition-colors appearance-none">
+<option>General Inquiry</option>
+<option>Get a Quote</option>
+<option>File a Claim</option>
+<option>Policy Support</option>
+</select>
+</div>
+<div class="sm:col-span-2 space-y-xs">
+<label class="font-label-lg text-label-md text-on-surface-variant uppercase block">Message</label>
+<textarea rows="4" placeholder="How can we help you?" class="w-full bg-surface-container-low border border-outline-variant text-on-surface rounded-lg p-sm font-label-md focus:border-tertiary outline-none transition-colors resize-none" required></textarea>
+</div>
+<div class="sm:col-span-2">
+<button type="submit" class="w-full bg-primary text-on-primary font-button text-button py-4 rounded-lg hover:bg-opacity-90 transition-all uppercase tracking-[0.1em]">SEND MESSAGE</button>
+</div>
+</form>
+</div>
+</div>
+</section>
 </main>
 <!-- Footer -->
 <footer class="bg-surface-container-lowest border-t border-outline-variant">
@@ -313,6 +355,21 @@
 </div>
 </footer>
     <script>
+        // Contact Form
+        document.getElementById('contact-form')?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = e.target.querySelector('button[type="submit"]');
+            const orig = btn.innerText;
+            btn.innerText = 'SENDING...';
+            btn.disabled = true;
+            setTimeout(() => {
+                alert('Message received. A Southern Insurance Company representative will contact you shortly.');
+                btn.innerText = orig;
+                btn.disabled = false;
+                e.target.reset();
+            }, 1500);
+        });
+
         // Simple Quote Execution Protocol
         document.querySelector('button[class*="bg-primary"][class*="py-4"]')?.addEventListener('click', (e) => {
             const button = e.target;
